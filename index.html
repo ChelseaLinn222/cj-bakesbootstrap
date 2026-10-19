@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CJ Bakes</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#home">CJ Bakes</a>
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cakes">Cakes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#enquiry">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home">
+    <!-- Welcome -->
+    <header class="container text-center py-5">
+      <h1>Welcome to CJ Bakes</h1>
+      <p>Homemade cakes for your special occasions.</p>
+      <a href="#cakes" class="btn btn-primary">View Our Cakes</a>
+    </header>
+
+    <!-- Cakes -->
+    <section class="container py-4" id="cakes">
+      <h2 class="text-center mb-4">Our Cakes</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="EightCakecopy.jpeg" class="card-img-top"
+                 alt="Celebration cake">
+            <div class="card-body">
+              <h3 class="card-title">Birthday Cakes</h3>
+              <p class="card-text">Cakes for special birthdays.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="SevenCakecopy.jpeg" class="card-img-top"
+                 alt="Decorated personalised cake">
+            <div class="card-body">
+              <h3 class="card-title">Personalised Cakes</h3>
+              <p class="card-text">Cakes made to suit your ideas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="SixtyCakecopy.jpeg" class="card-img-top"
+                 alt="Milestone celebration cake">
+            <div class="card-body">
+              <h3 class="card-title">Celebration Cakes</h3>
+              <p class="card-text">Cakes for memorable occasions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- API -->
+    <section class="container py-5">
+      <h2>Dessert Recipe</h2>
+      <p>Click below to find a dessert recipe.</p>
+
+      <button class="btn btn-primary" id="dessertButton">
+        Find a Recipe
+      </button>
+
+      <p id="dessertResult" role="status" aria-live="polite">
+        Your recipe will appear here.
+      </p>
+    </section>
+
+    <!-- Enquiry form -->
+    <section class="container py-5" id="enquiry">
+      <h2>Cake Enquiry Form</h2>
+
+      <form id="cakeForm">
+        <div class="mb-3">
+          <label for="customerName" class="form-label">Your name</label>
+          <input type="text" class="form-control"
+                 id="customerName" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="cakeType" class="form-label">Cake type</label>
+          <select id="cakeType" class="form-select" required>
+            <option value="">Choose a cake</option>
+            <option>Birthday cake</option>
+            <option>Wedding cake</option>
+            <option>Celebration cake</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Submit Enquiry
+        </button>
+      </form>
+
+      <p id="formResult" class="mt-3" role="status"
+         aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">CJ Bakes</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

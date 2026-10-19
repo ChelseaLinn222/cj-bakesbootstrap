@@ -1,0 +1,31 @@
+
+body {
+  background-color: #fbf7f0;
+  color: #49372b;
+}
+
+header {
+  padding: 60px 0;
+}
+
+h1, h2 {
+  color: #5b4030;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+section {
+  scroll-margin-top: 20px;
+}
+
+input:focus, select:focus, button:focus {
+  outline: 2px solid #a94313;
+  outline-offset: 2px;
+}
